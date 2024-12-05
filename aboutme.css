@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+html{
+    font-size: 62.5%; /*Font size for everything */
+}
+
+
+body{
+    width: 100%;
+    height: 100vh; /*SCROLL DOWN */
+    overflow-x: hidden;
+    background-color: #223E5F /* Background color in case the width is less than 100% */;
+    color: #ffffff /* Hi, it's... loren */; 
+}
+
+header{ /*sections */
+    margin-top: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 9%;
+    background-color: transparent;
+    filter: drop-shadow(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo{ /* about me - top right*/
+    font-size: 3rem;
+    color: #ffffff;
+    font-weight: 800;
+
+}
+
+nav a{ /* different sections on the top */ 
+    font-size: 1.8rem;
+    color: rgb(255, 255, 255);
+    margin-left: 4rem;
+    font-weight: 500;
+    transition: 0.3s ease;
+    border-bottom: 3px solid transparent;
+}
+
+nav a:hover,
+nav a.active{
+    color: #7095B6;
+    border-bottom: 3px solid #D0E7DD ;
+}
+
+@media(max-width:995px){
+    nav{
+        position: absolute;
+        display: none;
+        top: 0;
+        right: 0;
+        width: 40%;
+        border-left: 5px solid #834bb7;
+        border-bottom: 5px solid #b74b8c;
+        padding: 5rem solid;
+        background-color:  #116fdb;
+        border-top: 0.1rem solid rgba(179, 255, 0, 0.847);
+    }
+
+    nav.active{
+        display: block;
+    }
+
+    nav a{
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+    }
+
+    nav a:hover,
+    nav a.active{
+        padding: 1rem;
+        border-radius: 0.5rem;
+        border-bottom: 0.5rem solid #1f8505;
+    }
+}
+
+section{ /*location of picture - how much it occupies */
+    min-height: 100vh;
+    padding: 10rem 9% 5rem;
+}
+
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8rem;
+    background-color:  #223E5F; /*general background */
+}
+
+.home .home-content h1{
+    font-size: 3.5rem; /* size of SOME MORE ABOUT ME */
+    font-weight: 700;
+    line-height: 2;  /* Spacing between that and the next paragraph*/
+}
+
+span{
+    color: #D2386C /* color of ABOUT ME in the center text */
+}
+
+.home-content h3{
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.smaller-font {
+    font-size: 2.7rem; /* Adjust size as needed - I am a mechE*/
+    line-height: 2;
+}
+
+.home-content p{
+    font-size:1.6rem; /* welcome to my portfolio size*/
+}
+
+.gears-img{
+    width: 1000px;
+    height: 1000px;
+
+}
+
+
+
+
+/* IMAGE */ 
+.home-img img{ 
+    position: relative;
+    width: 20vw;
+    border-radius: 2%;
+    box-shadow: 0 0 25px solid #4bb761;
+    cursor: pointer;
+    transition: 0.2s linear;
+}
+
+.home-img img:hover{
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.social-icons a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background-color: transparent;
+    border: 0.2rem solid #ffffff;
+    font-size: 2rem;
+    border-radius: 50%;
+    margin: 3rem 1.5rem 3rem 0;
+    transition: 0.3s ease;
+    color: #ffffff;
+}
+
+.social-icons a:hover{
+    color: #223E5F;
+    transform: scale(1.3) translateY(-5px);
+    background-color: #ffffff;
+    box-shadow: 0  0 25px #7095B6;
+}
+
+.btn{
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background-color: #223E5F;
+    border-radius: 4rem;
+    font-size: 1.6rem;
+    color: #ffffff;
+    letter-spacing: 0.3rem;
+    font-weight: 600;
+    border: 2px solid #ffffff;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.btn:hover{
+    transform: scale3d(1.03);
+    background-color: #ffffff;
+    color: #223E5F;
+    box-shadow: 0 0 25px #7095B6;
+}
+
+@media (max-width: 1000px){
+    .home{
+        gap: 4rem;
+    }
+}
+
+@media(max-width:995px){
+    .home{
+        flex-direction: column;
+        margin: 5rem 4rem;
+    }
+
+    .home .home-content h3{
+        font-size: 2.5rem;
+    }
+
+    .home-content h1{
+        font-size: 5rem;
+    }
+
+    .home-img img{
+        width: 70vw;
+        margin-top: 4rem;
+    }
+
+/* IMAGE */ 
+.aboutme-brazil-img img{
+    height: 70%  
+
+
+}
+
+}

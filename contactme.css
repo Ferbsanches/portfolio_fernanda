@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+html{
+    font-size: 62.5%; /*Font size for everything */
+}
+
+
+body{
+    width: 100%; /* HOW MUCH SPACE THINGS OCCUPY */ 
+    height: 100vh; /* ALLOWS TO SCROLL DOWN! */
+    overflow-x: hidden;
+    background-color: #223E5F /* Don't know */;
+    color: #ffffff /* Hi, it's... loren */; 
+}
+
+header{
+    margin-top: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 9%;
+    background-color: transparent;
+    filter: drop-shadow(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+/* HOME */ 
+.logo{ 
+    font-size: 3rem;
+    color: #ffffff;
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+/* DIFFERNT TABS */
+nav a{ 
+    font-size: 1.8rem;
+    color: rgb(255, 255, 255);
+    margin-left: 4rem;
+    font-weight: 500;
+    transition: 0.3s ease;
+    border-bottom: 3px solid transparent;
+}
+
+nav a:hover, /* color of the active tab*/
+nav a.active{
+    color: #7095B6;
+    border-bottom: 3px solid #D0E7DD ;
+}
+
+
+section{
+    min-height: 100vh;
+    padding: 5rem 9% 5rem;
+}
+
+/* BACKGROUND COLOR */ 
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem; /* Spacing between image and text */
+    background-color:  #223E5F;
+
+
+
+
+
+    
+}
+
+
+
